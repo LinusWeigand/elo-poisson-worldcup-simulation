@@ -1,0 +1,446 @@
+{
+  "_help": [
+    "Enter real results here as the tournament progresses, then rerun.",
+    "GROUP STAGE: set 'score' to [home_goals, away_goals] (e.g. [2,1]).",
+    "Leave score null for matches not yet played.",
+    "KNOCKOUT: add entries to 'knockout' with the two team names, the",
+    "score AFTER extra time, and 'penalties_winner' if it went to pens.",
+    "Example: {\"teams\": [\"Mexico\", \"Croatia\"], \"score\": [1,1],",
+    "          \"penalties_winner\": \"Mexico\"}"
+  ],
+  "group_stage": [
+    {
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Korea",
+      "score": null
+    },
+    {
+      "group": "A",
+      "home": "South Africa",
+      "away": "Czech Republic",
+      "score": null
+    },
+    {
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Africa",
+      "score": null
+    },
+    {
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "South Korea",
+      "score": null
+    },
+    {
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "Mexico",
+      "score": null
+    },
+    {
+      "group": "A",
+      "home": "South Korea",
+      "away": "South Africa",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Canada",
+      "away": "Switzerland",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Qatar",
+      "away": "Bosnia and Herzegovina",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Canada",
+      "away": "Qatar",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Bosnia and Herzegovina",
+      "away": "Switzerland",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Bosnia and Herzegovina",
+      "away": "Canada",
+      "score": null
+    },
+    {
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Qatar",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Brazil",
+      "away": "Morocco",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Scotland",
+      "away": "Haiti",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Brazil",
+      "away": "Scotland",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Haiti",
+      "away": "Morocco",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Haiti",
+      "away": "Brazil",
+      "score": null
+    },
+    {
+      "group": "C",
+      "home": "Morocco",
+      "away": "Scotland",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "United States",
+      "away": "Australia",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Turkey",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "United States",
+      "away": "Paraguay",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "Turkey",
+      "away": "Australia",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "Turkey",
+      "away": "United States",
+      "score": null
+    },
+    {
+      "group": "D",
+      "home": "Australia",
+      "away": "Paraguay",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Germany",
+      "away": "Ecuador",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Ivory Coast",
+      "away": "Curacao",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Curacao",
+      "away": "Ecuador",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Curacao",
+      "away": "Germany",
+      "score": null
+    },
+    {
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Ivory Coast",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Japan",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Sweden",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Tunisia",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Sweden",
+      "away": "Japan",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Sweden",
+      "away": "Netherlands",
+      "score": null
+    },
+    {
+      "group": "F",
+      "home": "Japan",
+      "away": "Tunisia",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "Egypt",
+      "away": "New Zealand",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "Belgium",
+      "away": "Egypt",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Iran",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "score": null
+    },
+    {
+      "group": "G",
+      "home": "Iran",
+      "away": "Egypt",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Spain",
+      "away": "Uruguay",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Saudi Arabia",
+      "away": "Cape Verde",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Cape Verde",
+      "away": "Uruguay",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Cape Verde",
+      "away": "Spain",
+      "score": null
+    },
+    {
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Saudi Arabia",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "France",
+      "away": "Senegal",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "Norway",
+      "away": "Iraq",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "France",
+      "away": "Norway",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "Iraq",
+      "away": "Senegal",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "Iraq",
+      "away": "France",
+      "score": null
+    },
+    {
+      "group": "I",
+      "home": "Senegal",
+      "away": "Norway",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Argentina",
+      "away": "Austria",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Algeria",
+      "away": "Jordan",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Argentina",
+      "away": "Algeria",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Jordan",
+      "away": "Austria",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Jordan",
+      "away": "Argentina",
+      "score": null
+    },
+    {
+      "group": "J",
+      "home": "Austria",
+      "away": "Algeria",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "Portugal",
+      "away": "Colombia",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "Uzbekistan",
+      "away": "DR Congo",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "DR Congo",
+      "away": "Colombia",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "DR Congo",
+      "away": "Portugal",
+      "score": null
+    },
+    {
+      "group": "K",
+      "home": "Colombia",
+      "away": "Uzbekistan",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "England",
+      "away": "Croatia",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "Panama",
+      "away": "Ghana",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "England",
+      "away": "Panama",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "Ghana",
+      "away": "Croatia",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "Ghana",
+      "away": "England",
+      "score": null
+    },
+    {
+      "group": "L",
+      "home": "Croatia",
+      "away": "Panama",
+      "score": null
+    }
+  ],
+  "knockout": []
+}

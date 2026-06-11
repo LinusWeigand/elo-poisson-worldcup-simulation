@@ -1,0 +1,73 @@
+group,home,away,P_home_win_%,P_draw_%,P_away_win_%
+A,Mexico,South Korea,47.34,27.3,25.36
+A,South Africa,Czech Republic,18.12,24.86,57.02
+A,Mexico,South Africa,69.78,19.52,10.7
+A,Czech Republic,South Korea,33.5,28.26,38.24
+A,Czech Republic,Mexico,24.29,26.82,48.89
+A,South Korea,South Africa,58.38,24.1,17.52
+B,Canada,Switzerland,26.21,27.87,45.92
+B,Qatar,Bosnia and Herzegovina,20.75,25.9,53.35
+B,Canada,Qatar,72.17,18.28,9.55
+B,Bosnia and Herzegovina,Switzerland,12.94,21.52,65.54
+B,Bosnia and Herzegovina,Canada,19.6,25.68,54.73
+B,Switzerland,Qatar,79.7,14.23,6.07
+C,Brazil,Morocco,52.32,26.16,21.52
+C,Scotland,Haiti,59.38,24.16,16.46
+C,Brazil,Scotland,56.69,24.84,18.47
+C,Haiti,Morocco,14.01,22.1,63.9
+C,Haiti,Brazil,7.08,15.37,77.56
+C,Morocco,Scotland,39.76,28.29,31.95
+D,United States,Australia,30.92,28.59,40.49
+D,Paraguay,Turkey,28.57,28.02,43.4
+D,United States,Paraguay,26.1,27.49,46.41
+D,Turkey,Australia,48.9,27.02,24.08
+D,Turkey,United States,53.43,25.88,20.69
+D,Australia,Paraguay,31.0,28.02,40.98
+E,Germany,Ecuador,35.31,28.47,36.22
+E,Ivory Coast,Curacao,62.16,23.03,14.81
+E,Germany,Ivory Coast,60.08,23.59,16.33
+E,Curacao,Ecuador,4.75,12.38,82.86
+E,Curacao,Germany,5.24,12.86,81.9
+E,Ecuador,Ivory Coast,59.69,23.58,16.73
+F,Netherlands,Japan,39.35,28.7,31.95
+F,Tunisia,Sweden,27.9,27.98,44.12
+F,Netherlands,Tunisia,67.37,20.59,12.05
+F,Sweden,Japan,19.4,25.09,55.52
+F,Sweden,Netherlands,17.38,24.11,58.51
+F,Japan,Tunisia,62.72,22.5,14.78
+G,Belgium,Iran,47.58,27.53,24.89
+G,Egypt,New Zealand,49.01,27.19,23.8
+G,Belgium,Egypt,55.5,25.09,19.41
+G,New Zealand,Iran,18.33,24.52,57.16
+G,New Zealand,Belgium,11.88,20.66,67.46
+G,Iran,Egypt,43.15,27.78,29.08
+H,Spain,Uruguay,62.6,22.72,14.67
+H,Saudi Arabia,Cape Verde,34.82,28.66,36.53
+H,Spain,Saudi Arabia,88.28,8.79,2.93
+H,Cape Verde,Uruguay,11.95,20.42,67.64
+H,Cape Verde,Spain,3.28,9.45,87.27
+H,Uruguay,Saudi Arabia,67.86,20.31,11.83
+I,France,Senegal,55.3,25.4,19.29
+I,Norway,Iraq,65.89,21.37,12.74
+I,France,Norway,50.17,26.74,23.09
+I,Iraq,Senegal,15.72,23.41,60.86
+I,Iraq,France,6.99,15.41,77.6
+I,Senegal,Norway,31.4,27.95,40.65
+J,Argentina,Austria,64.71,21.69,13.6
+J,Algeria,Jordan,43.42,27.99,28.58
+J,Argentina,Algeria,70.91,18.91,10.19
+J,Jordan,Austria,23.02,26.64,50.34
+J,Jordan,Argentina,7.37,16.07,76.56
+J,Austria,Algeria,42.48,27.96,29.56
+K,Portugal,Colombia,36.64,28.65,34.71
+K,Uzbekistan,DR Congo,41.38,28.17,30.45
+K,Portugal,Uzbekistan,62.77,22.64,14.59
+K,DR Congo,Colombia,12.15,20.68,67.17
+K,DR Congo,Portugal,11.93,20.35,67.73
+K,Colombia,Uzbekistan,61.2,23.14,15.67
+L,England,Croatia,47.16,27.5,25.33
+L,Panama,Ghana,57.62,24.57,17.81
+L,England,Panama,65.23,21.53,13.24
+L,Ghana,Croatia,8.2,16.92,74.88
+L,Ghana,England,5.0,12.33,82.67
+L,Croatia,Panama,53.4,25.74,20.86

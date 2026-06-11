@@ -1,0 +1,11 @@
+{
+  "alpha": 0.1740486726439887,
+  "beta_replay": 0.0018805364695013058,
+  "scale": 0.875832255198613,
+  "beta": 0.0016470344970665664,
+  "rho": -0.03447876234849673,
+  "fit_window_start": "2016-06-10",
+  "fit_window_end": "2026-06-10",
+  "n_matches": 6860,
+  "note": "per-team rate lambda = exp(alpha + beta*d) with d on the OFFICIAL eloratings.net scale (incl. host bonus); T(d)=2*exp(alpha)*cosh(beta*d); rho = Dixon-Coles low-score dependence"
+}
