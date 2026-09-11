@@ -25,13 +25,13 @@
       "group": "A",
       "home": "Mexico",
       "away": "South Africa",
-      "score": null
+      "score": [2, 0]
     },
     {
       "group": "A",
       "home": "Czech Republic",
       "away": "South Korea",
-      "score": null
+      "score": [1, 2]
     },
     {
       "group": "A",
@@ -73,25 +73,25 @@
       "group": "B",
       "home": "Bosnia and Herzegovina",
       "away": "Canada",
-      "score": null
+      "score": [1, 1]
     },
     {
       "group": "B",
       "home": "Switzerland",
       "away": "Qatar",
-      "score": null
+      "score": [1, 1]
     },
     {
       "group": "C",
       "home": "Brazil",
       "away": "Morocco",
-      "score": null
+      "score": [1, 1]
     },
     {
       "group": "C",
       "home": "Scotland",
       "away": "Haiti",
-      "score": null
+      "score": [0, 1]
     },
     {
       "group": "C",
@@ -133,13 +133,13 @@
       "group": "D",
       "home": "United States",
       "away": "Paraguay",
-      "score": null
+      "score": [1, 4]
     },
     {
       "group": "D",
       "home": "Turkey",
       "away": "Australia",
-      "score": null
+      "score": [0, 2]
     },
     {
       "group": "D",
