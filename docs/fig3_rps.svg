@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+<rect x="0.00" y="0.00" width="720.00" height="400.00" rx="0" fill="#ffffff" fill-opacity="1" stroke="#dfe3e8" stroke-width="1"/>
+<text x="24.00" y="26.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" font-style="normal" fill="#16191d" text-anchor="start">Forecast error by tournament</text>
+<text x="24.00" y="41.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="start">mean ranked probability score, group stage — lower is better</text>
+<line x1="62.00" y1="303.17" x2="696.00" y2="303.17" stroke="#eef0f3" stroke-width="1" stroke-linecap="butt"/>
+<text x="53.00" y="306.67" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="end">0.15</text>
+<line x1="62.00" y1="240.67" x2="696.00" y2="240.67" stroke="#eef0f3" stroke-width="1" stroke-linecap="butt"/>
+<text x="53.00" y="244.17" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="end">0.18</text>
+<line x1="62.00" y1="178.17" x2="696.00" y2="178.17" stroke="#eef0f3" stroke-width="1" stroke-linecap="butt"/>
+<text x="53.00" y="181.67" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="end">0.21</text>
+<line x1="62.00" y1="115.67" x2="696.00" y2="115.67" stroke="#eef0f3" stroke-width="1" stroke-linecap="butt"/>
+<text x="53.00" y="119.17" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="end">0.24</text>
+<line x1="62.00" y1="74.00" x2="62.00" y2="324.00" stroke="#c7ccd2" stroke-width="1.2" stroke-linecap="butt"/>
+<line x1="62.00" y1="324.00" x2="696.00" y2="324.00" stroke="#c7ccd2" stroke-width="1.2" stroke-linecap="butt"/>
+<rect x="77.38" y="180.56" width="22.97" height="143.44" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="103.35" y="161.77" width="22.97" height="162.23" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="129.32" y="159.74" width="22.97" height="164.26" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="114.83" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2002</text>
+<text x="114.83" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">fitted</text>
+<rect x="183.04" y="281.84" width="22.97" height="42.16" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="209.01" y="272.79" width="22.97" height="51.21" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="234.99" y="278.83" width="22.97" height="45.17" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="220.50" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2006</text>
+<text x="220.50" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">fitted</text>
+<rect x="288.71" y="202.33" width="22.97" height="121.67" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="314.68" y="195.92" width="22.97" height="128.08" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="340.65" y="190.53" width="22.97" height="133.47" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="326.17" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2010</text>
+<text x="326.17" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">fitted</text>
+<rect x="394.38" y="220.16" width="22.97" height="103.84" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="420.35" y="222.46" width="22.97" height="101.54" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="446.32" y="232.34" width="22.97" height="91.66" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="431.83" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2014</text>
+<text x="431.83" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">Elo</text>
+<rect x="500.04" y="187.78" width="22.97" height="136.22" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="526.01" y="183.42" width="22.97" height="140.58" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="551.99" y="182.44" width="22.97" height="141.56" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="537.50" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2018</text>
+<text x="537.50" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">fitted</text>
+<rect x="605.71" y="104.53" width="22.97" height="219.47" rx="1.5" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="631.68" y="114.46" width="22.97" height="209.54" rx="1.5" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="657.65" y="103.54" width="22.97" height="220.46" rx="1.5" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="643.17" y="342.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="middle">2022</text>
+<text x="643.17" y="356.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="middle">no-H</text>
+<line x1="62.00" y1="196.20" x2="696.00" y2="196.20" stroke="#1f4e79" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3,3"/>
+<text x="220.50" y="189.20" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" font-weight="normal" font-style="normal" fill="#1f4e79" text-anchor="middle">pooled mean, fitted model — 0.2013</text>
+<rect x="68.00" y="48.00" width="11.00" height="11.00" rx="2" fill="#1f4e79" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="85.00" y="57.50" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="start">fitted model</text>
+<rect x="258.00" y="48.00" width="11.00" height="11.00" rx="2" fill="#a63d40" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="275.00" y="57.50" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="start">no host advantage</text>
+<rect x="448.00" y="48.00" width="11.00" height="11.00" rx="2" fill="#96a0aa" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="465.00" y="57.50" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" font-style="normal" fill="#16191d" text-anchor="start">standard Elo</text>
+<text x="24.00" y="374.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="start">Best model per tournament is named under the axis: the fitted model wins four of six, and the pooled difference</text>
+<text x="24.00" y="387.00" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="normal" font-style="normal" fill="#5b6570" text-anchor="start">against the baseline is −0.0024 ± 0.0021 (t = −1.14, n = 288) — favourable, but not statistically significant.</text>
+</svg>
