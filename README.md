@@ -23,16 +23,91 @@ the repository, applied to the plotting.
 
 ---
 
+## The day-1 forecast, and what happened
+
+Before a ball was kicked, the model ranked all 48 teams. Its top four were **Spain,
+Argentina, France and England** — and those turned out to be the four semifinalists.
+It priced that outcome, in advance, at **1 in 214**.
+
+Here is that forecast. It came from the Elo snapshot of 11 June 2026 and parameters
+fitted on matches ending 10 June 2026 — the day before the opening match. That
+cutoff is not a claim to be taken on trust, it is recorded in the artefact itself:
+`data/goal_model.json` carries `"fit_window_end": "2026-06-10"`. Nothing below saw
+a single minute of the tournament. The forecast is preserved verbatim in
+`data/day1_forecast.csv` — sealed, seeded (12345), and reproducible with
+`python3 main.py 100000` on a `data/results.json` with no scores entered.
+
+![Day-1 forecast: probability of winning the World Cup and of reaching the semifinal, for the top 16 teams](docs/fig2_day1_forecast.svg)
+
+The same numbers, with the rounds in between:
+
+| # | team | champion | final | **semifinal** | quarter | advance |
+|---:|---|---:|---:|---:|---:|---:|
+| **1** | **Spain** ✅ | **18.28%** | 28.35% | 41.71% | 55.17% | 99.2% |
+| **2** | **Argentina** ✅ | **13.38%** | 22.54% | 34.69% | 50.17% | 96.5% |
+| **3** | **France** ✅ | **9.68%** | 16.99% | 30.33% | 45.75% | 93.3% |
+| **4** | **England** ✅ | **6.38%** | 12.17% | 22.18% | 37.49% | 95.6% |
+| 5 | Brazil | 4.99% | 9.84% | 19.45% | 34.40% | 93.9% |
+| 6 | Portugal | 4.60% | 9.32% | 17.29% | 32.07% | 90.2% |
+| 7 | Colombia | 4.47% | 8.77% | 16.37% | 30.57% | 89.4% |
+| 8 | Netherlands | 3.23% | 6.85% | 14.86% | 29.28% | 89.4% |
+| 9 | Ecuador | 3.06% | 6.62% | 14.53% | 26.49% | 94.3% |
+| 10 | Germany | 2.98% | 6.46% | 14.20% | 26.10% | 93.9% |
+| 13 | Mexico *(host)* | 2.25% | 5.91% | 14.98% | 36.78% | 95.3% |
+| 20 | United States *(host)* | 1.11% | 2.87% | 6.75% | 16.82% | 67.6% |
+| 24 | Canada *(host)* | 0.90% | 2.93% | 8.53% | 27.57% | 94.6% |
+
+✅ = reached the semifinals.
+
+Forty-eight teams entered and forty-four of them did not reach the semifinals.
+Spain, the day-1 favourite, went on to beat France 2–0 in the first semifinal and
+reach the final.
+
+## What that forecast was actually worth
+
+Less than it looks, and the model itself says so. Asked how often all four of its
+top-ranked teams reach the semifinals together, it answers:
+
+| outcome | model probability |
+|---|---:|
+| 0 of the top 4 reach the SF | 18.10% |
+| 1 of 4 | 43.33% |
+| 2 of 4 | 30.59% |
+| 3 of 4 | 7.51% |
+| **4 of 4 — what happened** | **0.47%  (1 in 214)** |
+
+Two things follow, and both matter more than the headline:
+
+- **The four events are negatively dependent.** Multiplying the marginals naively
+  gives 0.974%, more than twice the true joint probability of 0.468%. These teams
+  sit in the same bracket and can eliminate each other — France and Spain in fact
+  met in the semifinal — so "all four survive" is strictly harder than independence
+  implies. This is the kind of error a marginals-only model makes and a full
+  bracket simulation does not.
+- **n = 1.** A 1-in-214 event occurring once is not evidence that the model is well
+  calibrated. It is one draw from a distribution, and the honest prior is that it
+  was mostly luck. The evidence for this model is §3 below — 384 matches, proper
+  scoring rules, paired standard errors — and that evidence is *equivocal*. Both results
+  are in this README, at the same level of prominence, because reporting only the
+  flattering one is how forecasting repositories mislead people.
+
+The host numbers illustrate the model's structure nicely. Mexico ranks **5th** on
+P(reach the quarter-finals) at 36.78% but only **13th** on P(champion) at 2.25%: a
+108-Elo home bonus is worth a great deal across three group matches and a Round of
+32, and very little across seven matches against progressively stronger opposition.
+
+---
+
 ## Why this repository might interest you
 
 | | |
 |---|---|
 | **Joint estimation** | Home advantage and the goal model are estimated *together* by fixed-point iteration, because the Elo replay that produces the covariate depends on the home-advantage parameter being estimated. |
-| **Proper scoring throughout** | Ranked Probability Score (the standard for ordered football outcomes), multiclass Brier, log-loss — aggregate metrics only. The single-tournament result in §4.2 is reported with the model's own price attached and labelled as the anecdote it is. |
+| **Proper scoring throughout** | Ranked Probability Score (the standard for ordered football outcomes), multiclass Brier, log-loss — aggregate metrics only. The single-tournament result above is reported with the model's own price attached and labelled as the anecdote it is. |
 | **Strict walk-forward validation** | Parameters are re-fitted on the 10 years ending the *day before* each tournament starts. Ratings are replayed match by match. No information from the future touches any prediction. |
 | **Paired inference** | Models are compared on identical matches, so differences are reported as paired means ± SE with *t* statistics — removing the common match-randomness variance that swamps unpaired comparisons. |
 | **Honest effect sizes** | The fitted model beats both baselines on every aggregate group-stage metric, and the paired difference is **1.1σ — not significant at n = 288.** That is reported here as prominently as the win. |
-| **A live out-of-sample call** | On day 1, before a ball was kicked, the model's four highest-ranked teams were Spain, Argentina, France and England. Those were the four semifinalists — an outcome it priced at **1 in 214**. Reported in §4.2 with that price attached, and with the n = 1 caveat it deserves. |
+| **A live out-of-sample call** | On day 1, before a ball was kicked, the model's four highest-ranked teams were Spain, Argentina, France and England. Those were the four semifinalists — an outcome it priced at **1 in 214**. Reported above with that price attached, and with the n = 1 caveat it deserves. |
 | **Exact competition rules** | The full 495-row FIFA Annex C third-place allocation table, validated on load against each match's permitted source groups; FIFA Article 13 tiebreakers with head-to-head mini-tables computed only among currently tied teams. |
 
 ---
@@ -266,7 +341,7 @@ time, with no compiled dependencies. Score distributions are cached at 1-Elo
 resolution and sampled via a marginal/conditional CDF pair, which reproduces the
 exact Dixon–Coles joint rather than an independent approximation.
 
-### 4.1 Outputs (`output/`)
+### Outputs (`output/`)
 
 | file | contents |
 |---|---|
@@ -275,78 +350,6 @@ exact Dixon–Coles joint rather than an independent approximation.
 | `knockout_match_probs.csv` | per bracket slot: P(pairing), 90-minute W/D/L, P(advance) |
 | `knockout_stats.csv` | per team: expected knockout draws after 90' and shootouts per tournament |
 | `backtest_matches.csv` | all 384 historical predictions, all three models |
-
-### 4.2 The day-1 forecast, and what happened
-
-This is the forecast the model produced **before the opening match**, from the Elo
-snapshot of 11 June 2026 and parameters fitted on matches ending 10 June 2026 — the
-day before. That cutoff is not a claim, it is recorded in the artefact:
-`data/goal_model.json` carries `"fit_window_end": "2026-06-10"`. Nothing in this
-table saw a single minute of the tournament.
-
-The forecast is preserved verbatim in `data/day1_forecast.csv` — sealed, seeded
-(12345), and reproducible with `python3 main.py 100000` on a `data/results.json`
-with no scores entered.
-
-![Day-1 forecast: probability of winning the World Cup and of reaching the semifinal, for the top 16 teams](docs/fig2_day1_forecast.svg)
-
-The same numbers, with the rounds in between:
-
-| # | team | champion | final | **semifinal** | quarter | advance |
-|---:|---|---:|---:|---:|---:|---:|
-| **1** | **Spain** ✅ | **18.28%** | 28.35% | 41.71% | 55.17% | 99.2% |
-| **2** | **Argentina** ✅ | **13.38%** | 22.54% | 34.69% | 50.17% | 96.5% |
-| **3** | **France** ✅ | **9.68%** | 16.99% | 30.33% | 45.75% | 93.3% |
-| **4** | **England** ✅ | **6.38%** | 12.17% | 22.18% | 37.49% | 95.6% |
-| 5 | Brazil | 4.99% | 9.84% | 19.45% | 34.40% | 93.9% |
-| 6 | Portugal | 4.60% | 9.32% | 17.29% | 32.07% | 90.2% |
-| 7 | Colombia | 4.47% | 8.77% | 16.37% | 30.57% | 89.4% |
-| 8 | Netherlands | 3.23% | 6.85% | 14.86% | 29.28% | 89.4% |
-| 9 | Ecuador | 3.06% | 6.62% | 14.53% | 26.49% | 94.3% |
-| 10 | Germany | 2.98% | 6.46% | 14.20% | 26.10% | 93.9% |
-| 13 | Mexico *(host)* | 2.25% | 5.91% | 14.98% | 36.78% | 95.3% |
-| 20 | United States *(host)* | 1.11% | 2.87% | 6.75% | 16.82% | 67.6% |
-| 24 | Canada *(host)* | 0.90% | 2.93% | 8.53% | 27.57% | 94.6% |
-
-✅ = reached the semifinals.
-
-**The model's top four were the four semifinalists: Spain, Argentina, France,
-England** — in a tournament where 48 teams entered and 44 of them did not make it.
-Spain, the day-1 favourite, went on to beat France 2–0 in the first semifinal and
-reach the final.
-
-### 4.3 What that is actually worth
-
-Less than it looks, and the model itself says so. Asked how often all four of its
-top-ranked teams reach the semifinals together, it answers:
-
-| outcome | model probability |
-|---|---:|
-| 0 of the top 4 reach the SF | 18.10% |
-| 1 of 4 | 43.33% |
-| 2 of 4 | 30.59% |
-| 3 of 4 | 7.51% |
-| **4 of 4 — what happened** | **0.47%  (1 in 214)** |
-
-Two things follow, and both matter more than the headline:
-
-- **The four events are negatively dependent.** Multiplying the marginals naively
-  gives 0.974%, more than twice the true joint probability of 0.468%. These teams
-  sit in the same bracket and can eliminate each other — France and Spain in fact
-  met in the semifinal — so "all four survive" is strictly harder than independence
-  implies. This is the kind of error a marginals-only model makes and a full
-  bracket simulation does not.
-- **n = 1.** A 1-in-214 event occurring once is not evidence that the model is well
-  calibrated. It is one draw from a distribution, and the honest prior is that it
-  was mostly luck. The evidence for this model is §3 — 384 matches, proper scoring
-  rules, paired standard errors — and that evidence is *equivocal*. Both results
-  are in this README, at the same level of prominence, because reporting only the
-  flattering one is how forecasting repositories mislead people.
-
-The host numbers illustrate the model's structure nicely. Mexico ranks **5th** on
-P(reach the quarter-finals) at 36.78% but only **13th** on P(champion) at 2.25%: a
-108-Elo home bonus is worth a great deal across three group matches and a Round of
-32, and very little across seven matches against progressively stronger opposition.
 
 ---
 
